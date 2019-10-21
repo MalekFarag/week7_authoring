@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
         console.log(result); // should see objects wrapped in an array
 
         // render the home view with dynamic data
-        res.render('home', { data: result });
+        res.render('home', { people: result });
     })
 })
 
